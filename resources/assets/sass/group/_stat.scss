@@ -1,0 +1,33 @@
+#group-stat {
+  table {
+    thead {
+      th {
+        text-align: center;
+        vertical-align: middle;
+        &[rowspan] {
+          border-bottom: 2px solid $table-border-color;
+        }
+      }
+    }
+    tbody {
+      tr {
+        &.top {
+          background-color: $panel-danger-heading-bg;
+          color: $panel-danger-text;
+          &:nth-child(odd) {
+            background-color: darken($panel-danger-heading-bg, 5%);
+          }
+          &:hover {
+            background-color: lighten($panel-danger-heading-bg, 5%);
+          }
+        }
+        a {
+          cursor: pointer;
+        }
+        td {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

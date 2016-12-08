@@ -1,0 +1,12 @@
+#group-list {
+  .form-group {
+    .form-control {
+      &.btn {
+        text-align: left;
+        .fa {
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

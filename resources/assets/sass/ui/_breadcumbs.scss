@@ -1,0 +1,13 @@
+.panel {
+  .panel-heading {
+    > .breadcrumb {
+      display: inline-block;
+      margin-bottom: 0;
+      padding: 0;
+      background: none;
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+}

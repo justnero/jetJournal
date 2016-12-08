@@ -1,0 +1,69 @@
+#class-show {
+  #days {
+    text-align: center;
+    font-size: 14pt;
+  }
+  #classes {
+    .class {
+      padding: 15px 0;
+      border-bottom: 1px solid lightgray;
+      &:last-child {
+        border-bottom: none;
+      }
+      .type {
+        color: grey;
+        font-size: 10pt;
+      }
+      .time {
+        .minutes {
+          vertical-align: super;
+          font-size: 8pt;
+          text-decoration: underline;
+          margin-left: 2px;
+        }
+      }
+      .discipline {
+        font-size: 14pt;
+        font-weight: 500;
+      }
+    }
+  }
+  #attendance {
+    .student {
+      .link {
+        min-width: 400px;
+        text-align: left;
+        .fa.pull-right {
+          margin-top: .3em;
+        }
+      }
+      .reason {
+        width: 50%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-left: none;
+        border-right: none;
+      }
+      .mark {
+        width: 50%;
+      }
+      &.present {
+        .reason {
+          display: none;
+        }
+        .mark {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .form-group {
+    .form-control {
+      &.btn {
+        .fa {
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

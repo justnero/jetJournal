@@ -1,0 +1,21 @@
+#group-index {
+  .panel {
+    table {
+      td {
+        position: relative;
+        .steward-controls {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 38px;
+          .btn {
+            border-radius: 0;
+            height: 100%;
+            line-height: 1;
+            padding: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+#class-index {
+  .panel-body {
+    padding-bottom: 0;
+  }
+  #days {
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom: 15px;
+  }
+  #classes {
+    .class {
+      margin: 0 -30px;
+      padding: 15px;
+      border-bottom: 1px solid lightgray;
+      position: relative;
+      &:last-child {
+        border-bottom: none;
+      }
+      &.past {
+        background-color: $state-success-bg;
+        color: $state-success-text;
+      }
+      &.present {
+        background-color: $state-danger-bg;
+        color: $state-danger-text;
+      }
+      &.future {
+        background-color: $state-warning-bg;
+        color: $state-warning-text;
+      }
+      .type {
+        font-size: 10pt;
+      }
+      .time {
+        .minutes {
+          vertical-align: super;
+          font-size: 8pt;
+          text-decoration: underline;
+          margin-left: 2px;
+        }
+      }
+      .discipline {
+        font-size: 14pt;
+        font-weight: 500;
+      }
+      .class-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.panel-controls {
+  margin-top: -11px;
+  margin-right: -16px;
+  height: 44px;
+  .btn {
+    height: 100%;
+    line-height: 1;
+    padding: 14px;
+    &:first-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    &:last-child {
+      border-bottom-right-radius: 0;
+    }
+  }
+}
