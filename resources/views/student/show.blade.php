@@ -10,7 +10,7 @@
                     <div class="panel-heading">
                         <ol class="breadcrumb">
                             <li><a href="/">Главная</a></li>
-                            <li><a href="{{ route('student.index') }}">Студенты</a></li>
+                            <li><a href="{{ route('student.show', $student) }}">Студенты</a></li>
                             <li class="active">{{ $student->name }}</li>
                         </ol>
                     </div>
