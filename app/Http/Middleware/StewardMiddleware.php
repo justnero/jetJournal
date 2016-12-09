@@ -22,6 +22,6 @@ class StewardMiddleware
         if(!is_null($user) && !is_null($user->student) && count($user->student->stewarded) > 0) {
             return $next($request);
         }
-        throw new AuthenticationException('Not a steward');
+        abort(403, 'Вы не староста');
     }
 }

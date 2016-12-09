@@ -23,6 +23,6 @@ class StudentMiddleware
             \View::share('student', $user->student);
             return $next($request);
         }
-        throw new AuthenticationException('Not attached to a student');
+        abort(403, 'К вам не подключен студент');
     }
 }
